@@ -12,11 +12,5 @@ public class MicrocloudProviderDept8001ApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-	
-	@Test
-	public void getDept(long id) {
-		
-		
-	} 
 
 }
