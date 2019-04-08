@@ -1,9 +1,14 @@
 package com.yj.dao;
 
-import com.yj.Dept;
+import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
+
+import com.yj.Dept;
+import com.yj.Student;
+
+@Mapper
 public interface IDeptDao {
 
-	
-	public Dept findById(Long id);
+	public List<Student> findAll();
 }

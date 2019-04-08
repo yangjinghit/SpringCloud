@@ -1,25 +1,26 @@
 package com.yj.service.impl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.yj.Dept;
+import com.yj.Student;
 import com.yj.dao.IDeptDao;
-import com.yj.dao.impl.DeptDaoImpl;
 import com.yj.service.IDeptService;
 
 @Service
 public class DeptServiceImpl implements IDeptService{
 
-	private IDeptDao deptDAO = new DeptDaoImpl();
-	
+	@Autowired
+	private IDeptDao deptDao;
+
 	@Override
-	public Dept get(long id) {
+	public List<Student> findAll() {
 		// TODO Auto-generated method stub
-		
-		
-		return this.deptDAO.findById(id);
+		return this.deptDao.findAll();
 	}
 
 }
