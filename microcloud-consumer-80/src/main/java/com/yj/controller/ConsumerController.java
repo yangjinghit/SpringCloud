@@ -27,10 +27,10 @@ public class ConsumerController {
 	@RequestMapping("/consumer/dept")
 	public Object getDept() {
 	
-		//String dept = this.restTemplate.getForObject(URL, String.class);
+		String dept = this.restTemplate.getForObject(URL, String.class);
 		
-		List<Student> dept = this.restTemplate.exchange(URL, HttpMethod.GET, new HttpEntity<Object>(this.headers), List.class)
-				.getBody();
+//		List<Student> dept = this.restTemplate.exchange(URL, HttpMethod.GET, new HttpEntity<Object>(this.headers), List.class)
+//				.getBody();
 		return dept;
 	
 		
