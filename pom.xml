@@ -64,6 +64,7 @@
   <modules>
   	<module>microcloud-api</module>
   	<module>microcloud-provider-dept-8001</module>
+  	<module>microcloud-provider-dept-8002</module>
   	<module>microcloud-consumer-80</module>
   	<module>microservice-cloud-05-eureka-6001</module>
   	<module>microservice-cloud-05-eureka-6002</module>
