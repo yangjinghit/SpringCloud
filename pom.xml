@@ -45,8 +45,9 @@
     <dependency>
 	    <groupId>org.springframework.cloud</groupId>
 	    <artifactId>spring-cloud-dependencies</artifactId>
-	    <version>Greenwich.RELEASE</version>
+	    <version>Greenwich.SR1</version>
 	    <type>pom</type>
+	    <scope>import</scope>
 	</dependency>
   	</dependencies>
   </dependencyManagement>
@@ -64,5 +65,6 @@
   	<module>microcloud-api</module>
   	<module>microcloud-provider-dept-8001</module>
   	<module>microcloud-consumer-80</module>
+  	<module>microservice-cloud-05-eureka-6001</module>
   </modules>
 </project>
