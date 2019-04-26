@@ -4,8 +4,17 @@ spring:
     time-zone: GMT+8
     serialization:
       write-dates-as-timestamps: true
+  application:
+    name: provider-8001
 logging:
   file: target/app.log
   level:
     ROOT: WARN
     com.yj: trace 
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:6001/eureka
