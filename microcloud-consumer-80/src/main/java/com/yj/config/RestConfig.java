@@ -3,6 +3,7 @@ package com.yj.config;
 import java.nio.charset.Charset;
 import java.util.Base64;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
@@ -21,6 +22,7 @@ public class RestConfig {
 		return headers;
 	}
 	
+	@LoadBalanced
 	@Bean
 	public RestTemplate getRestTemplate() {
 		

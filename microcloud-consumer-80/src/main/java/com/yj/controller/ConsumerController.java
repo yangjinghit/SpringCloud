@@ -17,7 +17,10 @@ public class ConsumerController {
 	
 	//	public static final String URL ="http://yangjing:Asdf12345@127.0.0.1:8001/dept";
 
-	public static final String URL ="http://127.0.0.1:8001/dept/list";
+	//public static final String URL ="http://127.0.0.1:8001/dept/list";
+	
+	public static final String URL ="http://provider-8001/dept/list";
+
 	
 	@Autowired
 	private RestTemplate restTemplate;
