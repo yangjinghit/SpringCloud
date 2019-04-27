@@ -4,3 +4,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://eureka6001.com:6001/eureka/,http://eureka6002.com:6002/eureka/
+      
+feign:
+  hystrix:
+    enabled: true
