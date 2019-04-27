@@ -64,6 +64,7 @@
   <modules>
   	<module>microcloud-api</module>
   	<module>microcloud-provider-dept-8001</module>
+  	<module>microcloud-provider-dept-hystrix-8001</module>
   	<module>microcloud-provider-dept-8002</module>
   	<module>microcloud-consumer-80</module>
   	<module>microcloud-consumer-feign</module>
